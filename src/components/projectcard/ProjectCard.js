@@ -14,7 +14,7 @@ const ProjectCard = ({ title, header, info, image, live, frontend, backend}) => 
     <div className='project-card'>
       <div>
         <Tilt className="Tilt" options={{ max : 25 }} >
-          <a className="Tilt-inner" target="_blank" rel="noreferrer" href="https://desolate-ocean-20239.herokuapp.com/">  
+          <a className="Tilt-inner" target="_blank" rel="noreferrer" href={live}>  
           <img alt='project' src={image}/>
           </a>
         </Tilt>
