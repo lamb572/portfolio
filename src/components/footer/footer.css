@@ -1,0 +1,48 @@
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    
+}
+
+.social{
+    display: inline-block;
+    height: 2rem;
+    text-decoration: none;
+    transition: color .15s ease-in;
+    width: 2rem;
+    color: #111;
+    margin-right: 1rem;
+}
+
+.social:link, .social:visited {
+    transition: color .15s ease-in;
+}
+
+.social:hover {
+    transition: color .15s ease-in;
+    color: #999;
+}
+
+.social:active {
+    transition: color .15s ease-in;
+}
+
+.social:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+    color: #999;
+}
+
+
+
+
+@media screen and (min-width: 30em) {
+    footer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+

@@ -1,0 +1,22 @@
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    background: #eee;
+	text-align: center;
+    padding: 0 1.5em;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.5rem;
+    }
+h2 {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+    opacity: 0.6;
+    }
+    
