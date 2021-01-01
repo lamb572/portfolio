@@ -2,12 +2,28 @@ import React from 'react';
 import Tilt from 'react-tilt';
 import './projectcard.css';
 
-const ProjectCard = ({ title, header, info, image, live, frontend, backend}) => {
 
+const ProjectCard = ({ title, header, info, image, live, frontend, backend}) => {
+  
+
+  
+  
   let newText = info.split('\n').map(i => {
     return <p>{i}</p>
-});
+  });
 
+  const IfBackEnd =(backend) => {
+    if (backend.backend.length > 0){
+      return(
+        <a className="button" target="_blank" rel="noreferrer" href={backend}> Back End Source Code</a>
+      )
+    }else{
+        return (
+          null
+        )
+      }
+  }
+  
 
 
   return (
@@ -33,9 +49,11 @@ const ProjectCard = ({ title, header, info, image, live, frontend, backend}) => 
         <a className="button" target="_blank" rel="noreferrer"  href={frontend}>
         Front End Source Code
         </a>
-        <a className="button" target="_blank" rel="noreferrer" href={backend}>
-        Back End Source Code
-        </a>
+
+        <div id="container"></div>
+          <IfBackEnd backend={backend}/>
+      
+
       </div>
     </div>
   );
